@@ -33,16 +33,18 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
 // === EDIT THE CODE BELOW ===
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the length of the array
+ * Returns the length of an array of numbers.
+ * @param {number[]} numbers - The array of numbers to get the length of.
+ * @returns {number} The length of the array.
  */
 function getLength(numbers) {
   return numbers.length;
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the sum of the numbers
+ * Calculates the sum of an array of numbers.
+ * @param {number[]} numbers - The array of numbers to sum.
+ * @returns {number} The sum of the numbers in the array.
  */
 function getSum(numbers) {
   let sum = 0;
@@ -53,18 +55,20 @@ function getSum(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the mean of the numbers
+ * Calculates the mean of an array of numbers.
+ * @param {number[]} numbers - The array of numbers to calculate the mean of.
+ * @returns {number} The mean of the array of numbers.
  */
 function getMean(numbers) {
   return getSum(numbers) / getLength(numbers);
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the smallest of the numbers
+ * Returns the minimum value in an array of numbers.
+ * @param {number[]} numbers - The array of numbers to search for the minimum value.
+ * @returns {number} The minimum value in the array.
  */
-function getMin(numbers) {
+function getMin(numbers) { 
   let min = numbers[0];
   for (let i = 1; i < numbers.length; i++) {
     if (numbers[i] < min) {
@@ -75,8 +79,9 @@ function getMin(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the largest of the numbers
+ * Returns the maximum number from an array of numbers.
+ * @param {number[]} numbers - The array of numbers to find the maximum from.
+ * @returns {number} The maximum number from the array.
  */
 function getMax(numbers) {
   let max = numbers[0];
@@ -89,16 +94,18 @@ function getMax(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number} the range of the numbers (max - min)
+ * Calculates the range of an array of numbers.
+ * @param {number[]} numbers - The array of numbers to calculate the range from.
+ * @returns {number} The range of the array of numbers.
  */
 function getRange(numbers) {
   return getMax(numbers) - getMin(numbers);
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the even numbers in the array
+ * Returns an array of even numbers from the input array.
+ * @param {number[]} numbers - The input array of numbers.
+ * @returns {number[]} - An array of even numbers from the input array.
  */
 function getEvens(numbers) {
   const evens = [];
@@ -111,8 +118,9 @@ function getEvens(numbers) {
 }
 
 /**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the odd numbers in the array
+ * Returns an array of odd numbers from the input array.
+ * @param {number[]} numbers - The input array of numbers.
+ * @returns {number[]} - An array of odd numbers from the input array.
  */
 function getOdds(numbers) {
   const odds = [];
